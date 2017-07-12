@@ -10,6 +10,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip install -q --no-cache-dir mysqlclient==1.3.7
+RUN pip install -q --no-cache-dir lightgbm==2.0.4
 
 RUN conda install --quiet --yes \
     'xgboost=0.6.*'
